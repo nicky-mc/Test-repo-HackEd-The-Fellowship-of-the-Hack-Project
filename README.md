@@ -1,7 +1,5 @@
-# <Project Name>
+# Side by Side Learning [SBS]
 # Description
-add description here
+SBS is an educational website based around teaching soft skills to adults and children to get them more prepared for the outside world
 # Requirements
-requirements for the system [if any are required]
-# Formatting
-ho commits should format their project
+No requirements so far
