@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import LessonCard from "./temp/LessonCard";
-import EmailBuilder from "./temp/EmailBuilder";
-import CVBuilder from "./temp/CVBuilder";
-import { SOFT_SKILLS } from "./temp2/softSkills";
-import { ENGLISH_LESSONS } from "./temp2/EnglishLessons";
+import LessonCard from "./components/LessonCard";
+import EmailBuilder from "./components/EmailBuilder";
+import CVBuilder from "./components/CVBuilder";
+import { SOFT_SKILLS } from "./data/softSkills";
+import { ENGLISH_LESSONS } from "./data/EnglishLessons";
 
 function SoftSkills() {
   const [activeTab, setActiveTab] = useState("english");
