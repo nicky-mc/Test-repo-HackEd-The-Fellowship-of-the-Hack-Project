@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
-import { UK_LIFE_SKILLS } from "./data/ukLifeSkills";
-import { TECH_SKILLS } from "./data/techLessons";
-import { SOFT_SKILLS } from "./data/softSkills";
-import { ENGLISH_LESSONS } from "./data/EnglishLessons";
+import { UK_LIFE_SKILLS } from "./temp2/ukLifeSkills";
+import { TECH_SKILLS } from "./temp2/techLessons";
+import { SOFT_SKILLS } from "./temp2/softSkills";
+import { ENGLISH_LESSONS } from "./temp2/EnglishLessons";
 
 const Awards = () => {
   const [completedIds, setCompletedIds] = useState([]);

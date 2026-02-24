@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import LessonCard from "./components/LessonCard";
-import PasswordChecker from "./components/PasswordChecker";
-import { TECH_SKILLS } from "./data/techLessons";
+import LessonCard from "./temp/LessonCard";
+import PasswordChecker from "./temp/PasswordChecker";
+import { TECH_SKILLS } from "./temp2/techLessons";
 
 function TechSkills() {
   const [activeTab, setActiveTab] = useState("lessons");

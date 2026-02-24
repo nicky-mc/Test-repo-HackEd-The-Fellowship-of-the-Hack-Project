@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import LessonCard from "./components/LessonCard";
-import UKHealthCheck from "./components/UkHealthCheck";
-import { UK_LIFE_SKILLS } from "./data/lessons";
-import BudgetGame from "./components/BudgetGame";
+import LessonCard from "./temp/LessonCard";
+import UKHealthCheck from "./temp/UkHealthCheck";
+import { UK_LIFE_SKILLS } from "./temp2/lessons";
+import BudgetGame from "./temp/BudgetGame";
 
 function BasicSkills() {
   const [activeTab, setActiveTab] = useState("lessons");

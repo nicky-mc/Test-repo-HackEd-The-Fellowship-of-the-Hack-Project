@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Navbar from "./components/Navbar.jsx";
+import Navbar from "./temp/Navbar.jsx";
 import Home from "./Home.jsx";
 import BasicSkills from "./BasicSkills.jsx";
 import TechSkills from "./TechSkills.jsx";
