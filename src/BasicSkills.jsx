@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import LessonCard from "./Components/LessonCard";
-import UKHealthCheck from "./Components/UkHealthCheck";
-import { UK_LIFE_SKILLS } from "./Data/lessons";
+import LessonCard from "./components/LessonCard";
+import UKHealthCheck from "./components/UkHealthCheck";
+import { UK_LIFE_SKILLS } from "./data/lessons";
+import BudgetGame from "./components/BudgetGame";
 
 function BasicSkills() {
   const [activeTab, setActiveTab] = useState("lessons");
@@ -82,7 +83,11 @@ function BasicSkills() {
               ))}
             </div>
           ) : (
-            <UKHealthCheck />
+            // Wrap the budget tools in a div or fragment so they both show on the "budget" tab
+            <div className="flex flex-col gap-8">
+              <UKHealthCheck />
+              <BudgetGame />
+            </div>
           )}
         </section>
       </main>

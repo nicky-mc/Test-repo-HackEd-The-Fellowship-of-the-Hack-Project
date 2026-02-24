@@ -103,7 +103,7 @@ function Home() {
             skills, or simply follow your passion for learning, you’ll find a
             place designed to support your journey every step of the way.
             Together, we’re building a world where education is not restricted
-            by cost, location, or circumstance—but powered by openness,
+            by cost, location, or circumstance but powered by openness,
             inclusion, and the idea that everyone deserves the chance to thrive.
           </p>
         </div>

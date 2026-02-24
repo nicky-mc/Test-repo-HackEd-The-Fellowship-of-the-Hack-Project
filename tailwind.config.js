@@ -9,6 +9,10 @@ module.exports = {
         'sbs-dark': '#064789',
         'sbs-mid': '#427AA1',
         'sbs-light': '#EBF2FA',
+      },
+      // THIS MAKES LEXEND THE DEFAULT FONT EVERYWHERE
+      fontFamily: {
+        sans: ['Lexend', 'sans-serif'], 
       }
     },
   },

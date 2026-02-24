@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import LessonCard from "./Components/LessonCard";
-import EmailBuilder from "./Components/EmailBuilder";
-import { SOFT_SKILLS } from "./Data/softSkills";
-import { ENGLISH_LESSONS } from "./Data/EnglishLessons";
+import LessonCard from "./components/LessonCard";
+import EmailBuilder from "./components/EmailBuilder";
+import CVBuilder from "./components/CVBuilder";
+import { SOFT_SKILLS } from "./data/softSkills";
+import { ENGLISH_LESSONS } from "./data/EnglishLessons";
 
 function SoftSkills() {
   const [activeTab, setActiveTab] = useState("english");
@@ -27,7 +28,14 @@ function SoftSkills() {
           onClick={() => setActiveTab("interviews")}
           className={`w-full p-4 mb-3 text-left font-semibold rounded-lg transition-all duration-200 focus:outline-none ${activeTab === "interviews" ? "bg-sbs-mid shadow-inner" : "hover:bg-sbs-mid/50"}`}
         >
-          🗣️ CVs & Interviews
+          🗣️ Interviews
+        </button>
+        {/* NEW CV BUILDER BUTTON */}
+        <button
+          onClick={() => setActiveTab("cv")}
+          className={`w-full p-4 mb-3 text-left font-semibold rounded-lg transition-all duration-200 focus:outline-none ${activeTab === "cv" ? "bg-sbs-mid shadow-inner" : "hover:bg-sbs-mid/50"}`}
+        >
+          📄 CV Builder
         </button>
         <button
           onClick={() => setActiveTab("email")}
@@ -66,6 +74,12 @@ function SoftSkills() {
             Interviews
           </button>
           <button
+            onClick={() => setActiveTab("cv")}
+            className={`px-3 py-2 text-xs font-bold rounded-md ${activeTab === "cv" ? "bg-sbs-dark text-white" : "bg-white text-sbs-dark shadow"}`}
+          >
+            CVs
+          </button>
+          <button
             onClick={() => setActiveTab("email")}
             className={`px-3 py-2 text-xs font-bold rounded-md ${activeTab === "email" ? "bg-sbs-dark text-white" : "bg-white text-sbs-dark shadow"}`}
           >
@@ -77,11 +91,13 @@ function SoftSkills() {
           <h1 className="text-3xl md:text-4xl font-extrabold mb-3">
             {activeTab === "english" && "Reading & Writing Confidence"}
             {activeTab === "interviews" && "Job Readiness & Interviews"}
+            {activeTab === "cv" && "Instant CV Creator"}
             {activeTab === "email" && "Professional Communication Tool"}
           </h1>
           <p className="text-lg text-gray-700 max-w-2xl">
-            Translate official jargon, handle tricky interview questions, and
-            communicate like a pro.
+            {activeTab === "cv"
+              ? "Build a clean, professional CV in seconds. No complicated formatting required."
+              : "Translate official jargon, handle tricky interview questions, and communicate like a pro."}
           </p>
         </header>
 
@@ -100,6 +116,9 @@ function SoftSkills() {
               ))}
             </div>
           )}
+          {/* RENDER THE CV BUILDER WHEN TAB IS SELECTED */}
+          {activeTab === "cv" && <CVBuilder />}
+
           {activeTab === "email" && <EmailBuilder />}
         </section>
       </main>

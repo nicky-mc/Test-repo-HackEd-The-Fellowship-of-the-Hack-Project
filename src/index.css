@@ -1,3 +1,25 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* --- ACCESSIBILITY MODES --- */
+
+/* Dyslexia Mode: Uses a bottom-heavy sans-serif font and increases spacing */
+.dyslexic-mode {
+  font-family: 'Comic Sans MS', 'Comic Sans', 'Lexend', cursive !important;
+  letter-spacing: 0.05em !important;
+  word-spacing: 0.15em !important;
+  line-height: 1.8 !important;
+}
+
+/* Large Text Mode: Bumps up the base font size for the whole app */
+.large-text-mode {
+  font-size: 115% !important;
+}
+
+/* Existing basic body styling */
+body {
+  margin: 0;
+  background-color: #EBF2FA;
+  transition: all 0.3s ease; /* Smooth transition when toggling modes */
+}

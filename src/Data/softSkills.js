@@ -33,4 +33,23 @@ export const SOFT_SKILLS = [
     realLifeContext:
       "Many people have gaps for health, family, or personal reasons. Employers value honesty. Being a carer or a stay-at-home parent requires immense organization and resilience—these are highly valuable 'Soft Skills'.",
   },
+  {
+    id: "soft_3",
+    category: "CV & Cover Letters",
+    title: "Tailoring Your Application",
+    videoUrl: "https://www.youtube.com/embed/9AL0LRim4Ls?si=GgsRnVR9PJob5SEw",
+    scenario:
+      "You are applying for a Customer Service role. Your standard CV heavily highlights your past warehouse experience and your forklift license.",
+    mathProblem:
+      "What is the most effective way to update your CV and Cover Letter for this new job?",
+    formula: "Highlight Transferable Skills > Irrelevant Technical Skills.",
+    options: [
+      "Send the standard CV as it is; they will see you are a hard worker.",
+      "Delete the warehouse job entirely so you don't look overqualified.",
+      "Keep the job, but rewrite the bullet points to focus on times you helped customers, handled complaints, or worked in a team.",
+    ],
+    correctAnswer: 2,
+    realLifeContext:
+      "Employers scan CVs in about 7 seconds! If they don't instantly see skills relevant to the job they are hiring for (like communication or problem-solving), they will move on. Always tweak your cover letter and CV to match the specific job description.",
+  },
 ];
